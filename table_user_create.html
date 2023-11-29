@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="table_user_create.css">
+    <title>GGMT</title>
+</head>
+<body>
+    <div id="sec1">
+        <div class="container">
+            <h2>Create New User</h2>
+        </div>
+    </div>
+
+    <div id="sec2">
+        <div class="container">
+            <form action="table_user_create.php" method="post">
+                <div class="row">
+                    <div class="d-flex">
+                        <label for="name" style="width: 75px;">Name</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                </div><br>
+
+                <div class="d-flex">
+                    <label for="ps" style="width: 75px;">Password</label>
+                    <input type="text" name="ps" id="ps" required>
+                </div><br>
+                <div class="d-flex">
+                    Photo <input type="text" name="photo" id="photo">
+                </div><br>
+                <div class="d-flex">
+                    Create At <input type="date" name="date" id="date" class="col-6" required>
+                </div><br>
+
+                <div class="d-flex justify-content-end">
+                    <a href="table_user.php" id="btn-can" class="bg-danger text-white rounded-2 pt-2 pb-2 ps-3 pe-3 text-decoration-none">Cancel</a>
+                    <input type="submit" id="btn-save" class="btn-primary text-white rounded-2" value="Save"></input>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
